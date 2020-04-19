@@ -111,6 +111,7 @@ class PlayState extends State
 	}
 
 	public function gameover() {
+		add(new FlxSprite(0, 0, Images.x__png));
 		openSubState(new states.GameOver());
 	}
 

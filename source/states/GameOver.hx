@@ -18,11 +18,11 @@ class GameOver extends SubState {
             strip.color = 0xFFFF004D;
             strip.origin.x = 0;
             strip.scale.x = 0;
-            FlxTween.tween(strip.scale, { x: 144 }, 0.3, { startDelay: i * 0.1, ease: FlxEase.quadOut });
+            FlxTween.tween(strip.scale, { x: 144 }, 0.3, { startDelay: i * 0.1 + 0.25, ease: FlxEase.quadOut });
             FlxTween.color(strip, 0.5, strip.color, 0xFFFFA300, { startDelay: i * 0.2 });
             add(strip);
         }
-        new FlxTimer().start(n * 0.1 + 1, (_) -> FlxG.resetState());
+        new FlxTimer().start(n * 0.1 + 1.25, (_) -> FlxG.resetState());
     }
 
 }

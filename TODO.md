@@ -1,8 +1,9 @@
 # TODO
 
 - [ ] ui
-  - [ ] title
+  - [x] title
   - [x] gameover
+  - [ ] win screen
 
 - [x] hazards
   - [x] spikes
@@ -28,6 +29,17 @@
     - [ ] block hit ground
     - [ ] cannon fire
     - [ ] explosion
+
+- [ ] content
+  - [ ] tutorial level
+  - [ ] misc levels
+    - [ ] 1
+    - [ ] 2
+    - [ ] 3
+    - [ ] 4
+    - [ ] 5
+    - [ ] 6
+  - [ ] final level
 
 # Bugs
 
