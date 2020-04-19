@@ -17,7 +17,7 @@ class PlayState extends State
 
 	public static var instance:PlayState;
 	
-	static var level = 1;
+	public static var level = 1;
 
 	public function new() {
 		super();
@@ -110,6 +110,11 @@ class PlayState extends State
 		FlxG.collide(fleshies, hazards, (a, b) -> a.kill());
 	}
 
+	function win() {
+		level++;
+		openSubState(new states.NextStage(level >= 1 ? WinScreen : PlayState));
+	}
+	
 	public function gameover() {
 		add(new FlxSprite(0, 0, Images.x__png));
 		openSubState(new states.GameOver());

@@ -12,6 +12,7 @@ class Title extends FlxState {
     var can_click:Bool = true;
 
     override function create() {
+        PlayState.level = 1;
 		FlxG.mouse.useSystemCursor = true;
 		FlxG.mouse.visible = true;
         bgColor = 0xFFFFA300;
