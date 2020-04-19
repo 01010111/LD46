@@ -1,0 +1,209 @@
+{
+  "name": "LD46",
+  "ogmoVersion": "3.3.0",
+  "levelPaths": ["."],
+  "backgroundColor": "#282c34ff",
+  "gridColor": "#3c4049cc",
+  "anglesRadians": true,
+  "directoryDepth": 5,
+  "layerGridDefaultSize": {"x": 8, "y": 8},
+  "levelDefaultSize": {"x": 320, "y": 240},
+  "levelMinSize": {"x": 144, "y": 144},
+  "levelMaxSize": {"x": 144, "y": 144},
+  "levelValues": [],
+  "defaultExportMode": ".json",
+  "compactExport": false,
+  "externalScript": "",
+  "playCommand": "",
+  "entityTags": [],
+  "layers": [
+    {
+      "definition": "decal",
+      "name": "overlay",
+      "gridSize": {"x": 8, "y": 8},
+      "exportID": "23990538",
+      "folder": "..\\images",
+      "includeImageSequence": true,
+      "scaleable": false,
+      "rotatable": false,
+      "values": []
+    },
+    {
+      "definition": "entity",
+      "name": "entities",
+      "gridSize": {"x": 8, "y": 8},
+      "exportID": "26226259",
+      "requiredTags": [],
+      "excludedTags": []
+    },
+    {
+      "definition": "tile",
+      "name": "tiles",
+      "gridSize": {"x": 8, "y": 8},
+      "exportID": "23985621",
+      "exportMode": 0,
+      "arrayMode": 1,
+      "defaultTileset": "tiles"
+    }
+  ],
+  "entities": [
+    {
+      "exportID": "26222052",
+      "name": "baby",
+      "limit": 1,
+      "size": {"x": 8, "y": 8},
+      "origin": {"x": 0, "y": 0},
+      "originAnchored": true,
+      "shape": {
+        "label": "Rectangle",
+        "points": [
+          {"x": -1, "y": -1},
+          {"x": 1, "y": -1},
+          {"x": -1, "y": 1},
+          {"x": 1, "y": -1},
+          {"x": -1, "y": 1},
+          {"x": 1, "y": 1}
+        ]
+      },
+      "color": "#ffb6b6ff",
+      "tileX": false,
+      "tileY": false,
+      "tileSize": {"x": 16, "y": 16},
+      "resizeableX": false,
+      "resizeableY": false,
+      "rotatable": false,
+      "rotationDegrees": 360,
+      "canFlipX": false,
+      "canFlipY": false,
+      "canSetColor": false,
+      "hasNodes": false,
+      "nodeLimit": 0,
+      "nodeDisplay": 0,
+      "nodeGhost": true,
+      "tags": [],
+      "values": []
+    },
+    {
+      "exportID": "26238291",
+      "name": "spikes",
+      "limit": -1,
+      "size": {"x": 8, "y": 8},
+      "origin": {"x": 0, "y": 0},
+      "originAnchored": true,
+      "shape": {
+        "label": "Rectangle",
+        "points": [
+          {"x": -1, "y": -1},
+          {"x": 1, "y": -1},
+          {"x": -1, "y": 1},
+          {"x": 1, "y": -1},
+          {"x": -1, "y": 1},
+          {"x": 1, "y": 1}
+        ]
+      },
+      "color": "#ff0000ff",
+      "tileX": true,
+      "tileY": false,
+      "tileSize": {"x": 8, "y": 8},
+      "resizeableX": false,
+      "resizeableY": false,
+      "rotatable": false,
+      "rotationDegrees": 360,
+      "canFlipX": false,
+      "canFlipY": false,
+      "canSetColor": false,
+      "hasNodes": false,
+      "nodeLimit": 0,
+      "nodeDisplay": 0,
+      "nodeGhost": true,
+      "tags": [],
+      "values": [],
+      "texture": "../images/spikes.png",
+      "textureImage": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAgAAAAICAYAAADED76LAAAAAXNSR0IArs4c6QAAAEpJREFUGJVjYBgkIP7sk/9KCib/sfGZGBgYGHL4JFA0IPOZ4s8++c/AwMBgu3YDg5KCyX90PpPNg8sMUz69YLB5cJmBgYGBAZ0PAMw7Iwdm115QAAAAAElFTkSuQmCC"
+    },
+    {
+      "exportID": "26244506",
+      "name": "block",
+      "limit": -1,
+      "size": {"x": 8, "y": 8},
+      "origin": {"x": 0, "y": 0},
+      "originAnchored": true,
+      "shape": {
+        "label": "Rectangle",
+        "points": [
+          {"x": -1, "y": -1},
+          {"x": 1, "y": -1},
+          {"x": -1, "y": 1},
+          {"x": 1, "y": -1},
+          {"x": -1, "y": 1},
+          {"x": 1, "y": 1}
+        ]
+      },
+      "color": "#ff0000ff",
+      "tileX": false,
+      "tileY": false,
+      "tileSize": {"x": 16, "y": 16},
+      "resizeableX": false,
+      "resizeableY": false,
+      "rotatable": false,
+      "rotationDegrees": 360,
+      "canFlipX": false,
+      "canFlipY": false,
+      "canSetColor": false,
+      "hasNodes": false,
+      "nodeLimit": 0,
+      "nodeDisplay": 0,
+      "nodeGhost": true,
+      "tags": [],
+      "values": [
+        {
+          "name": "direction",
+          "definition": "Enum",
+          "choices": ["UP", "DOWN", "LEFT", "RIGHT"],
+          "defaults": 0
+        }
+      ]
+    },
+    {
+      "exportID": "26254542",
+      "name": "cannon",
+      "limit": -1,
+      "size": {"x": 8, "y": 8},
+      "origin": {"x": 0, "y": 0},
+      "originAnchored": true,
+      "shape": {
+        "label": "Rectangle",
+        "points": [
+          {"x": -1, "y": -1},
+          {"x": 1, "y": -1},
+          {"x": -1, "y": 1},
+          {"x": 1, "y": -1},
+          {"x": -1, "y": 1},
+          {"x": 1, "y": 1}
+        ]
+      },
+      "color": "#2d303fff",
+      "tileX": false,
+      "tileY": false,
+      "tileSize": {"x": 16, "y": 16},
+      "resizeableX": false,
+      "resizeableY": false,
+      "rotatable": false,
+      "rotationDegrees": 360,
+      "canFlipX": false,
+      "canFlipY": false,
+      "canSetColor": false,
+      "hasNodes": false,
+      "nodeLimit": 0,
+      "nodeDisplay": 0,
+      "nodeGhost": true,
+      "tags": [],
+      "values": [
+        {"name": "frame", "definition": "Integer", "defaults": 2, "bounded": true, "min": 0, "max": 4}
+      ]
+    }
+  ],
+  "tilesets": [
+    {"label": "tiles", "path": "../images/tiles.png", "image": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAMAAACdt4HsAAAAAXNSR0IArs4c6QAAAGBQTFRFAAAAIiA0RSg8Zjkxj1Y733Em2aBm7sOa+/I2meVQar4wN5RuS2kvUkskMjw5Pz90MGCCW27hY5v/X83ky9v8////m623hH6HaWpqWVZSdkKKrDIy2Vdj13u6j5dKim8w+2O8zwAAACB0Uk5TAP////////////////////////////////////////+Smq12AAACnUlEQVRYhaWW3ZrkEBCGpXVnt9UB5zP3f51bf0QhyLM1kyBRL6o+0i79p7l1FwD8h+ZRebAGgNrNkweAzACoCVOATB6sxz0gog3HbgCF2ywhxpbQA6B6pxVX+ett4t8kowaoa0UY+sPVPRoAtcESVv7a0V3jQ2oJLWS0XNdMvI+DRrz1z4VrFo5/bTZbIdvlOjskAXqCsWa5DOj7TAGmvrEb57YNiDGEXkcxzgBmJbjeToghTAHx99cuF0DbAgKoAd7bEj1+LgDrJtUS4zvEAvCfj69LHv/vjxIikHetJHkKJQaeHNmozACZAo4SMsDuZ54UA7ydgRJwXPJHb4i6/7oDQQC+XYISIMQ8U0ljnZe8H9yxsLh47fx5vvwfvM5yHXV7NYA7z/Mzu44Dpy4mFbzL+qlJgM/nPbuyhLF7qWQACcFh2F6zSyUMFEI5l6KokpsIeKG9vbHjkPJN71TCeirFfLIxiZXI/mloTFAJx5iVowIAzi4D7vyFwPm/El9K2VkkpHmWutO9HWQppA3A96vvpIJ3SpA0M0CejM4kBtAL7F4qGRDCFgAVESCgH1UC6SRR2rlJAHGjMqUhgN5AYEpghgxGjZQB1yxGAAHTmElK6kegxDFg1Wi3WRDz91hLlnwJIuVD+t0GcWwWMAvitdTKvl8GaD5TugHobCtAjiMDqCgiug/iFYMKwFnIeSmh6gDd0JmIrTLzMo8xwKY6V5OkMavoVgeiO5PKwiqbqXQa62Dwm0we1btxIqQbHSCZ5je3SwedhV2A6qAH8G7cAZQI2JlQ/vYATeSvBn159gBGQDXtIcCYHgMbgLEOxHYBQ6Np7ekgWafHgOwlm86G9DEgNUfLtpDYudqT+UjZFlJ7Kj4CLD7PK8Dq876yfx6AxslJK6hSAAAAAElFTkSuQmCC", "tileWidth": 8, "tileHeight": 8, "tileSeparationX": 0, "tileSeparationY": 0}
+  ]
+}
