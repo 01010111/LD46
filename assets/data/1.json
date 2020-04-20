@@ -64,7 +64,8 @@
           "originY": 0,
           "values": {"direction": "LEFT"}
         },
-        {"name": "baby", "id": 10, "_eid": "26222052", "x": 16, "y": -8, "originX": 0, "originY": 0}
+        {"name": "baby", "id": 10, "_eid": "26222052", "x": 16, "y": -8, "originX": 0, "originY": 0},
+        {"name": "teddy", "id": 11, "_eid": "32523596", "x": 16, "y": 96, "originX": 0, "originY": 0}
       ]
     },
     {

@@ -26,4 +26,9 @@ class Intro extends SubState {
 		new FlxTimer().start(n * 0.1 + 0.3, (_) -> close());
 	}
 
+	override function close() {
+		super.close();
+		if (!FlxG.sound.music.playing) FlxG.sound.playMusic(Audio.play__mp3);
+	}
+
 }

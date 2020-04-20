@@ -12,7 +12,7 @@ class Explosion extends Particle {
     }
 
     override function fire(options) {
-        trace('explosion');
+        FlxG.sound.play(Audio.explosion__mp3);
         super.fire(options);
         animation.play('play');
     }

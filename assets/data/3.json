@@ -1,0 +1,112 @@
+{
+  "ogmoVersion": "3.3.0",
+  "width": 144,
+  "height": 144,
+  "offsetX": 0,
+  "offsetY": 0,
+  "layers": [
+    {
+      "name": "overlay",
+      "_eid": "23990538",
+      "offsetX": 0,
+      "offsetY": 0,
+      "gridCellWidth": 8,
+      "gridCellHeight": 8,
+      "gridCellsX": 18,
+      "gridCellsY": 18,
+      "decals": [
+        {"x": 24, "y": 24, "texture": "overlay.png"},
+        {"x": 72, "y": 24, "texture": "overlay.png"},
+        {"x": 120, "y": 24, "texture": "overlay.png"},
+        {"x": 24, "y": 72, "texture": "overlay.png"},
+        {"x": 72, "y": 72, "texture": "overlay.png"},
+        {"x": 120, "y": 72, "texture": "overlay.png"},
+        {"x": 24, "y": 120, "texture": "overlay.png"},
+        {"x": 72, "y": 120, "texture": "overlay.png"},
+        {"x": 120, "y": 120, "texture": "overlay.png"}
+      ],
+      "folder": "..\\images"
+    },
+    {
+      "name": "entities",
+      "_eid": "26226259",
+      "offsetX": 0,
+      "offsetY": 0,
+      "gridCellWidth": 8,
+      "gridCellHeight": 8,
+      "gridCellsX": 18,
+      "gridCellsY": 18,
+      "entities": [
+        {"name": "spikes", "id": 0, "_eid": "26238291", "x": 0, "y": 72, "originX": 0, "originY": 0},
+        {"name": "spikes", "id": 1, "_eid": "26238291", "x": 8, "y": 72, "originX": 0, "originY": 0},
+        {"name": "spikes", "id": 2, "_eid": "26238291", "x": 32, "y": 72, "originX": 0, "originY": 0},
+        {"name": "spikes", "id": 3, "_eid": "26238291", "x": 40, "y": 72, "originX": 0, "originY": 0},
+        {"name": "spikes", "id": 4, "_eid": "26238291", "x": 16, "y": 72, "originX": 0, "originY": 0},
+        {"name": "spikes", "id": 5, "_eid": "26238291", "x": 24, "y": 72, "originX": 0, "originY": 0},
+        {
+          "name": "cannon",
+          "id": 6,
+          "_eid": "26254542",
+          "x": 16,
+          "y": 120,
+          "originX": 0,
+          "originY": 0,
+          "values": {"frame": 2}
+        },
+        {
+          "name": "cannon",
+          "id": 7,
+          "_eid": "26254542",
+          "x": 24,
+          "y": 120,
+          "originX": 0,
+          "originY": 0,
+          "values": {"frame": 2}
+        },
+        {"name": "spikes", "id": 8, "_eid": "26238291", "x": 96, "y": 72, "originX": 0, "originY": 0},
+        {"name": "spikes", "id": 9, "_eid": "26238291", "x": 104, "y": 72, "originX": 0, "originY": 0},
+        {"name": "spikes", "id": 10, "_eid": "26238291", "x": 128, "y": 72, "originX": 0, "originY": 0},
+        {"name": "spikes", "id": 11, "_eid": "26238291", "x": 112, "y": 72, "originX": 0, "originY": 0},
+        {"name": "spikes", "id": 12, "_eid": "26238291", "x": 120, "y": 72, "originX": 0, "originY": 0},
+        {"name": "spikes", "id": 13, "_eid": "26238291", "x": 136, "y": 72, "originX": 0, "originY": 0},
+        {"name": "spikes", "id": 14, "_eid": "26238291", "x": 64, "y": 120, "originX": 0, "originY": 0},
+        {"name": "spikes", "id": 15, "_eid": "26238291", "x": 72, "y": 120, "originX": 0, "originY": 0},
+        {"name": "teddy", "id": 16, "_eid": "32523596", "x": 112, "y": 48, "originX": 0, "originY": 0},
+        {"name": "baby", "id": 17, "_eid": "26222052", "x": 16, "y": -8, "originX": 0, "originY": 0}
+      ]
+    },
+    {
+      "name": "tiles",
+      "_eid": "23985621",
+      "offsetX": 0,
+      "offsetY": 0,
+      "gridCellWidth": 8,
+      "gridCellHeight": 8,
+      "gridCellsX": 18,
+      "gridCellsY": 18,
+      "tileset": "tiles",
+      "data2D": [
+        [0, 0, 0, 0, 0, 0, 0, 0, 0, 3, 4, 5, 0, 0, 0, 0, 0, 0],
+        [0, 1, 2, 0, 0, 0, 0, 0, 19, 11, 12, 13, 17, 17, 17, 17, 17, 17],
+        [8, 9, 10, 0, 0, 0, 34, 34, 34, 34, 33, 34, 26, 26, 26, 25, 25, 25],
+        [0, 0, 0, 20, 0, 0, 41, 49, 41, 41, 50, 49, 0, 0, 0, 0, 0, 0],
+        [34, 33, 33, 34, 33, 33, 50, 42, 42, 42, 41, 42, 0, 0, 0, 0, 14, 15],
+        [42, 50, 50, 41, 42, 50, 50, 42, 50, 49, 41, 49, 0, 0, 0, 0, 0, 0],
+        [0, 3, 4, 5, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+        [0, 11, 12, 13, 0, 0, 0, 0, 0, 0, 1, 2, 0, 0, 0, 0, 0, 0],
+        [0, 0, 28, 31, 0, 0, 0, 0, 0, 8, 9, 10, 0, 0, 28, 31, 6, 7],
+        [0, 0, 21, 23, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 21, 23, 0, 0],
+        [34, 33, 34, 34, 34, 33, 34, 35, 0, 0, 32, 33, 34, 34, 33, 33, 33, 33],
+        [42, 41, 42, 50, 42, 50, 42, 43, 0, 0, 40, 41, 49, 41, 50, 50, 50, 41],
+        [0, 0, 0, 0, 0, 0, 0, 6, 7, 0, 0, 0, -1, -1, -1, -1, -1, -1],
+        [14, 15, 0, 0, 0, 0, 0, 20, 0, 0, 0, 0, -1, -1, -1, -1, -1, -1],
+        [34, 35, 0, 0, 32, 34, 34, 35, 0, 0, 32, 33, -1, -1, -1, -1, -1, -1],
+        [42, 43, 0, 0, 40, 42, 42, 43, 0, 0, 40, 41, -1, -1, -1, -1, -1, -1],
+        [50, 44, 33, 34, 45, 50, 41, 44, 33, 34, 45, 42, -1, -1, -1, -1, -1, -1],
+        [49, 42, 41, 49, 50, 50, 50, 49, 50, 50, 42, 49, -1, -1, -1, -1, -1, -1]
+      ],
+      "exportMode": 0,
+      "arrayMode": 1
+    }
+  ]
+}

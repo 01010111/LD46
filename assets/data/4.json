@@ -1,0 +1,158 @@
+{
+  "ogmoVersion": "3.3.0",
+  "width": 144,
+  "height": 144,
+  "offsetX": 0,
+  "offsetY": 0,
+  "layers": [
+    {
+      "name": "overlay",
+      "_eid": "23990538",
+      "offsetX": 0,
+      "offsetY": 0,
+      "gridCellWidth": 8,
+      "gridCellHeight": 8,
+      "gridCellsX": 18,
+      "gridCellsY": 18,
+      "decals": [
+        {"x": 24, "y": 24, "texture": "overlay.png"},
+        {"x": 72, "y": 24, "texture": "overlay.png"},
+        {"x": 120, "y": 24, "texture": "overlay.png"},
+        {"x": 24, "y": 72, "texture": "overlay.png"},
+        {"x": 72, "y": 72, "texture": "overlay.png"},
+        {"x": 120, "y": 72, "texture": "overlay.png"},
+        {"x": 24, "y": 120, "texture": "overlay.png"},
+        {"x": 72, "y": 120, "texture": "overlay.png"},
+        {"x": 120, "y": 120, "texture": "overlay.png"}
+      ],
+      "folder": "..\\images"
+    },
+    {
+      "name": "entities",
+      "_eid": "26226259",
+      "offsetX": 0,
+      "offsetY": 0,
+      "gridCellWidth": 8,
+      "gridCellHeight": 8,
+      "gridCellsX": 18,
+      "gridCellsY": 18,
+      "entities": [
+        {
+          "name": "cannon",
+          "id": 0,
+          "_eid": "26254542",
+          "x": 8,
+          "y": 72,
+          "originX": 0,
+          "originY": 0,
+          "values": {"frame": 3}
+        },
+        {
+          "name": "cannon",
+          "id": 1,
+          "_eid": "26254542",
+          "x": 32,
+          "y": 72,
+          "originX": 0,
+          "originY": 0,
+          "values": {"frame": 1}
+        },
+        {
+          "name": "cannon",
+          "id": 2,
+          "_eid": "26254542",
+          "x": 56,
+          "y": 72,
+          "originX": 0,
+          "originY": 0,
+          "values": {"frame": 3}
+        },
+        {
+          "name": "cannon",
+          "id": 3,
+          "_eid": "26254542",
+          "x": 80,
+          "y": 72,
+          "originX": 0,
+          "originY": 0,
+          "values": {"frame": 1}
+        },
+        {
+          "name": "cannon",
+          "id": 4,
+          "_eid": "26254542",
+          "x": 104,
+          "y": 72,
+          "originX": 0,
+          "originY": 0,
+          "values": {"frame": 3}
+        },
+        {
+          "name": "cannon",
+          "id": 5,
+          "_eid": "26254542",
+          "x": 128,
+          "y": 72,
+          "originX": 0,
+          "originY": 0,
+          "values": {"frame": 1}
+        },
+        {"name": "teddy", "id": 6, "_eid": "32523596", "x": 16, "y": 96, "originX": 0, "originY": 0},
+        {
+          "name": "block",
+          "id": 7,
+          "_eid": "26244506",
+          "x": 16,
+          "y": 120,
+          "originX": 0,
+          "originY": 0,
+          "values": {"direction": "RIGHT"}
+        },
+        {
+          "name": "block",
+          "id": 8,
+          "_eid": "26244506",
+          "x": 72,
+          "y": 128,
+          "originX": 0,
+          "originY": 0,
+          "values": {"direction": "LEFT"}
+        },
+        {"name": "baby", "id": 9, "_eid": "26222052", "x": 16, "y": -8, "originX": 0, "originY": 0}
+      ]
+    },
+    {
+      "name": "tiles",
+      "_eid": "23985621",
+      "offsetX": 0,
+      "offsetY": 0,
+      "gridCellWidth": 8,
+      "gridCellHeight": 8,
+      "gridCellsX": 18,
+      "gridCellsY": 18,
+      "tileset": "tiles",
+      "data2D": [
+        [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+        [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+        [0, 0, 0, 0, 0, 0, 0, 0, 32, 35, 0, 0, 0, 0, 0, 0, 0, 0],
+        [0, 0, 0, 0, 0, 0, 0, 0, 40, 43, 0, 0, 0, 0, 0, 0, 0, 0],
+        [33, 34, 34, 34, 34, 34, 34, 34, 45, 44, 34, 34, 33, 35, 0, 0, 32, 34],
+        [50, 42, 50, 49, 50, 41, 41, 50, 41, 42, 50, 42, 49, 43, 0, 0, 40, 42],
+        [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+        [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+        [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+        [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+        [34, 34, 34, 34, 34, 33, 34, 33, 33, 33, 34, 34, 33, 34, 34, 34, 33, 34],
+        [50, 49, 49, 49, 41, 41, 50, 41, 50, 50, 50, 41, 41, 50, 42, 42, 49, 49],
+        [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, -1, -1, -1, -1, -1, -1],
+        [17, 17, 17, 17, 17, 17, 17, 17, 17, 17, 17, 17, -1, -1, -1, -1, -1, -1],
+        [24, 26, 25, 25, 25, 25, 26, 25, 25, 26, 25, 27, -1, -1, -1, -1, -1, -1],
+        [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, -1, -1, -1, -1, -1, -1],
+        [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, -1, -1, -1, -1, -1, -1],
+        [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, -1, -1, -1, -1, -1, -1]
+      ],
+      "exportMode": 0,
+      "arrayMode": 1
+    }
+  ]
+}

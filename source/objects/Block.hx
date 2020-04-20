@@ -23,6 +23,7 @@ class Block extends FlxSprite {
 
 	override function update(elapsed:Float) {
 		var old_direction = direction;
+		if (justTouched(FlxObject.ANY)) FlxG.sound.play(Audio.block_hit__mp3);
 		if (wasTouching & FlxObject.CEILING > 0) direction = DOWN;
 		if (wasTouching & FlxObject.RIGHT > 0) direction = LEFT;
 		if (wasTouching & FlxObject.FLOOR > 0) direction = UP;

@@ -9,6 +9,8 @@ import flixel.FlxState;
 class WinScreen extends FlxState {
 
     override function create() {
+        PlayState.levels = [0,2,3,4,1,7];
+
 		FlxG.mouse.useSystemCursor = true;
 		FlxG.mouse.visible = true;
         bgColor = 0xFFFFA300;

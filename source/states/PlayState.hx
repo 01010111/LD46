@@ -17,7 +17,9 @@ class PlayState extends State
 
 	public static var instance:PlayState;
 	
-	public static var level = 1;
+	public static var levels = [0,2,3,4,1,7];
+
+	var level:Int;
 
 	public function new() {
 		super();
@@ -33,6 +35,8 @@ class PlayState extends State
 	public var cannonballs = new ParticleEmitter(() -> new Cannonball());
 	public var explosions = new ParticleEmitter(() -> new Explosion());
 	public var puffs = new ParticleEmitter(() -> new Puff());
+	public var teddy:TeddyBear;
+	public var baby:Baby;
 	
 	var tilemaps:Map<Int, FlxTilemap> = [];
 	var overlays:Map<Int, FlxSprite> = [];
@@ -41,7 +45,8 @@ class PlayState extends State
 	override function create() {
 		FlxG.mouse.useSystemCursor = true;
 		FlxG.mouse.visible = true;
-		bgColor = 0xFF222034;
+		bgColor = 0xFFffa300;
+		level = levels.shift();
 		var pack = FlxOgmoUtils.get_ogmo_package(Data.ld46__ogmo, 'assets/data/$level.json');
 		make_tiles(pack);
 		make_objects(pack);
@@ -85,6 +90,7 @@ class PlayState extends State
 			case 'spikes': objects.add(new Spikes(data.x, data.y));
 			case 'block': objects.add(new Block(data.x, data.y, data.values.direction));
 			case 'cannon': objects.add(new Cannon(data.x, data.y, data.values.frame));
+			case 'teddy': objects.add(new TeddyBear(data.x, data.y));
 		}
 	}
 
@@ -108,16 +114,20 @@ class PlayState extends State
 			b.kill();
 		});
 		FlxG.collide(fleshies, hazards, (a, b) -> a.kill());
+		FlxG.overlap(baby, teddy, (a,b) -> win());
 	}
 
 	function win() {
-		level++;
-		openSubState(new states.NextStage(level >= 1 ? WinScreen : PlayState));
+		FlxG.sound.play(Audio.win__mp3);
+		openSubState(new states.NextStage(levels.length > 0 ? PlayState : WinScreen));
 	}
 	
 	public function gameover() {
+		FlxG.sound.music.stop();
+		FlxG.sound.play(Audio.gameover__mp3);
 		add(new FlxSprite(0, 0, Images.x__png));
 		openSubState(new states.GameOver());
+		levels.unshift(level);
 	}
 
 	function check_mouse() {
@@ -149,6 +159,8 @@ class PlayState extends State
 	}
 
 	function move_to_pos(last_pos:Int, new_pos:Int) {
+		FlxG.sound.play(Audio.slide__mp3);
+
 		var tilemap = tilemaps[last_pos];
 		var overlay = overlays[last_pos];
 

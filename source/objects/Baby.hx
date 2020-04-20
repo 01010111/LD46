@@ -21,9 +21,11 @@ class Baby extends FlxSprite {
         clipRect = FlxRect.get(2, 2, 12, 14);
         PLAYSTATE.collidables.add(this);
         PLAYSTATE.fleshies.add(this);
+        PLAYSTATE.baby = this;
     }
 
     override function update(elapsed:Float) {
+        if (justTouched(FlxObject.FLOOR)) FlxG.sound.play(Audio.hit__mp3);
         if (justTouched(FlxObject.LEFT)) facing = FlxObject.RIGHT;
         if (justTouched(FlxObject.RIGHT)) facing = FlxObject.LEFT;
         velocity.x = 0;

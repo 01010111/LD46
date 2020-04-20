@@ -12,7 +12,7 @@ class Title extends FlxState {
     var can_click:Bool = true;
 
     override function create() {
-        PlayState.level = 1;
+        FlxG.sound.playMusic(Audio.title__mp3);
 		FlxG.mouse.useSystemCursor = true;
 		FlxG.mouse.visible = true;
         bgColor = 0xFFFFA300;
@@ -55,6 +55,7 @@ class Title extends FlxState {
     }
 
     function swap(t1:TitleTile, t2:TitleTile) {
+        FlxG.sound.play(Audio.slide__mp3);
         var p1 = t1.p;
         t1.p = t2.p;
         t2.p = p1;
@@ -87,6 +88,8 @@ class Title extends FlxState {
     }
 
     function win() {
+        FlxG.sound.play(Audio.win__mp3);
+        FlxG.sound.music.stop();
         var i = 0;
         while (tiles.length > 0) {
             var t = tiles.pop();
